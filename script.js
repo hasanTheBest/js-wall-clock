@@ -1,3 +1,4 @@
+// play tik sound
 select(".tik").addEventListener("click", () => {
   select(".sound").play();
 });
@@ -16,11 +17,8 @@ function updateClockHand() {
   styles(select(".minute-hand"), minutes * 6 + 270 + 1 + (seconds + 1) / 10);
 
   // update hours
-  // styles(select(".hour-hand"), hours * 15 + 270 + 1);
   const degree = hours > 12 ? 15 : 30;
   styles(select(".hour-hand"), hours * degree + 270 + 1 + (minutes + 1) / 2);
-
-  // console.log(seconds, minutes, hours);
 }
 
 setInterval(updateClockHand, 1000);

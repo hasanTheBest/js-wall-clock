@@ -30,6 +30,14 @@ body {
 .page-title > b {
   color: var(--red);
 }
+
+.page-title .tik {
+  font-size: 2em;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0 0.2rem;
+  border-radius: 0.2rem;
+}
 .clock-frame {
   padding: 1rem;
   padding-top: 0;
@@ -308,32 +316,6 @@ body {
   box-shadow: var(--dark) 0px 0px 0px 8px, var(--blue) 0px 0px 0px 16px,
     var(--red) 0px 0px 0px 24px;
 }
-
-/* ======== Animation ======== */
-/* @keyframes seconds {
-  from {
-    transform: rotate(270deg);
-  }
-  to {
-    transform: rotate(630deg);
-  }
-}
-@keyframes minutes {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes hours {
-  from {
-    transform: rotate(120deg);
-  }
-  to {
-    transform: rotate(480deg);
-  }
-} */
 
 /* =========== Responsiveness ============== */
 @media (max-width: 767px) {
