@@ -17,8 +17,8 @@ function updateClockHand() {
   styles(select(".minute-hand"), minutes * 6 + 270 + 1 + (seconds + 1) / 10);
 
   // update hours
-  const degree = hours > 12 ? 30 : 15;
-  styles(select(".hour-hand"), hours * degree + 270 + 1 + (minutes + 1) / 2);
+  // const degree = hours > 12 ? 30 : 15;
+  styles(select(".hour-hand"), hours * 30 + 270 + 1 + (minutes + 1) / 10);
 
   // const degree = hours > 12 ? 15 : 30;
   // styles(select(".hour-hand"), hours * 30 + 271);
